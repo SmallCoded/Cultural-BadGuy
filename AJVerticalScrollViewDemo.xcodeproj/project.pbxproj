@@ -15,6 +15,11 @@
 		5B117B69228112F3005FC3CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B117B68228112F3005FC3CC /* main.m */; };
 		5B117B73228112F3005FC3CC /* AJVerticalScrollViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B117B72228112F3005FC3CC /* AJVerticalScrollViewDemoTests.m */; };
 		5B117B7E228112F3005FC3CC /* AJVerticalScrollViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B117B7D228112F3005FC3CC /* AJVerticalScrollViewDemoUITests.m */; };
+		5B117B8E2281136E005FC3CC /* AJVerticalScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B117B8D2281136E005FC3CC /* AJVerticalScrollView.m */; };
+		5B117B9422815403005FC3CC /* gengduo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B117B9022815402005FC3CC /* gengduo@3x.png */; };
+		5B117B9522815403005FC3CC /* gengduo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B117B9122815402005FC3CC /* gengduo@2x.png */; };
+		5B117B9622815403005FC3CC /* kuaixun@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B117B9222815402005FC3CC /* kuaixun@3x.png */; };
+		5B117B9722815403005FC3CC /* kuaixun@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B117B9322815402005FC3CC /* kuaixun@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,12 @@
 		5B117B79228112F3005FC3CC /* AJVerticalScrollViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AJVerticalScrollViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B117B7D228112F3005FC3CC /* AJVerticalScrollViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJVerticalScrollViewDemoUITests.m; sourceTree = "<group>"; };
 		5B117B7F228112F3005FC3CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B117B8C2281136E005FC3CC /* AJVerticalScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJVerticalScrollView.h; sourceTree = "<group>"; };
+		5B117B8D2281136E005FC3CC /* AJVerticalScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJVerticalScrollView.m; sourceTree = "<group>"; };
+		5B117B9022815402005FC3CC /* gengduo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gengduo@3x.png"; sourceTree = "<group>"; };
+		5B117B9122815402005FC3CC /* gengduo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gengduo@2x.png"; sourceTree = "<group>"; };
+		5B117B9222815402005FC3CC /* kuaixun@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kuaixun@3x.png"; sourceTree = "<group>"; };
+		5B117B9322815402005FC3CC /* kuaixun@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kuaixun@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +92,7 @@
 		5B117B4D228112F3005FC3CC = {
 			isa = PBXGroup;
 			children = (
+				5B117B8F22815402005FC3CC /* imageSource */,
 				5B117B58228112F3005FC3CC /* AJVerticalScrollViewDemo */,
 				5B117B71228112F3005FC3CC /* AJVerticalScrollViewDemoTests */,
 				5B117B7C228112F3005FC3CC /* AJVerticalScrollViewDemoUITests */,
@@ -101,6 +113,7 @@
 		5B117B58228112F3005FC3CC /* AJVerticalScrollViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5B117B8B22811324005FC3CC /* AJVerticalScrollView */,
 				5B117B59228112F3005FC3CC /* AppDelegate.h */,
 				5B117B5A228112F3005FC3CC /* AppDelegate.m */,
 				5B117B5C228112F3005FC3CC /* ViewController.h */,
@@ -130,6 +143,26 @@
 				5B117B7F228112F3005FC3CC /* Info.plist */,
 			);
 			path = AJVerticalScrollViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		5B117B8B22811324005FC3CC /* AJVerticalScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				5B117B8C2281136E005FC3CC /* AJVerticalScrollView.h */,
+				5B117B8D2281136E005FC3CC /* AJVerticalScrollView.m */,
+			);
+			path = AJVerticalScrollView;
+			sourceTree = "<group>";
+		};
+		5B117B8F22815402005FC3CC /* imageSource */ = {
+			isa = PBXGroup;
+			children = (
+				5B117B9022815402005FC3CC /* gengduo@3x.png */,
+				5B117B9122815402005FC3CC /* gengduo@2x.png */,
+				5B117B9222815402005FC3CC /* kuaixun@3x.png */,
+				5B117B9322815402005FC3CC /* kuaixun@2x.png */,
+			);
+			path = imageSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +269,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B117B66228112F3005FC3CC /* LaunchScreen.storyboard in Resources */,
+				5B117B9422815403005FC3CC /* gengduo@3x.png in Resources */,
 				5B117B63228112F3005FC3CC /* Assets.xcassets in Resources */,
+				5B117B9722815403005FC3CC /* kuaixun@2x.png in Resources */,
+				5B117B9522815403005FC3CC /* gengduo@2x.png in Resources */,
 				5B117B61228112F3005FC3CC /* Main.storyboard in Resources */,
+				5B117B9622815403005FC3CC /* kuaixun@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B117B8E2281136E005FC3CC /* AJVerticalScrollView.m in Sources */,
 				5B117B5E228112F3005FC3CC /* ViewController.m in Sources */,
 				5B117B69228112F3005FC3CC /* main.m in Sources */,
 				5B117B5B228112F3005FC3CC /* AppDelegate.m in Sources */,
